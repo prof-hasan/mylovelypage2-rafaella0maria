@@ -42,7 +42,6 @@ p{
 li{
     font: size 20px;;
     color: rgb(110, 42, 165);
-    border: 2px, rgb(65, 3, 65), solid;
 }
 .linha-topo {
   display: flex;
@@ -68,6 +67,7 @@ li{
  h2{
     font-family: 'Courier New', Courier, monospace;
     font-size:  20px;
+    color: blueviolet;
     text-align: center;
     opacity: 0.5;
  }
