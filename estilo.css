@@ -69,7 +69,7 @@ li{
     font-size:  20px;
     color: blueviolet;
     text-align: center;
-    opacity: 0.5;
+    opacity: 0.7;
  }
   
  a:hover {
@@ -85,7 +85,7 @@ a:visited {
   text-decoration: none;
   color: #333;
   font-weight: bold;
-  font-size: 50;
+  font-size: 38px;
 }
 
 .seta li a::after {
@@ -118,4 +118,8 @@ a:visited {
   width: 500%;
   height: auto;
   border-radius: 8px;
+}
+
+ol{
+  font-size: 30px;
 }
