@@ -16,7 +16,7 @@ body, header {
 
 }
 strong:hover{
-    color: rgb(71, 0, 68);
+    color:rgb(76, 0, 255);
 }
 
 .animado {
@@ -66,10 +66,10 @@ li{
 }
  h2{
     font-family: 'Courier New', Courier, monospace;
-    font-size:  20px;
+    font-size:30px;
     color: blueviolet;
     text-align: center;
-    opacity: 0.7;
+    opacity: 0.5;
  }
   
  a:hover {
@@ -114,10 +114,11 @@ a:visited {
   max-width: 40px;
 }
 
-.destaque img {
+.destaque img:hover {
   width: 500%;
   height: auto;
   border-radius: 8px;
+
 }
 
 ol{
