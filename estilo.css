@@ -28,9 +28,13 @@ strong:hover{
   75%  { transform: translateX(5px) rotate(3deg); }
   100% { transform: translateX(0) rotate(0deg); }
 }
-p{
+p::first-letter{
+  font-size: 30px;
+  color: #64008b;
+}
+p, pre{
     font-family:'Courier New', Courier, monospace;
-    font-size: 20px;
+    font-size: 17px;
 }
 li{
     font: size 20px;;
@@ -73,7 +77,7 @@ a:visited {
   text-decoration: none;
   color: hsl(0, 0%, 20%);
   font-weight: bold;
-  font-size: 38px;
+  font-size: 25px;
 }
 .seta li a::after {
   content: "→"; 
@@ -90,7 +94,7 @@ a:visited {
   align-items: center;
   flex-wrap: wrap;
   padding: 20px;
-  margin-right: 20%;
+  margin-right: 27%;
   justify-content: space-between;
   gap: 10px;
 }
@@ -114,6 +118,8 @@ ol{
 img{
   display:flex;
   height: 20px; 
+  border-radius: 20px;
+  margin: 20px;
 }
   .item {
     display: flex;
@@ -164,4 +170,51 @@ text-align: right;
 }
 #text2{
  text-align:;
+}
+#texto1{
+  text-align: center;
+}
+#texto2{
+  text-align: center;
+}
+ {
+}
+.artista {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.artista img {
+  order: 2;
+  max-width: 200px;
+  height: auto;
+}
+.descricao {
+  flex: 1;
+  display: block;
+  background-color: #f4f4f4;
+  border: 2px solid #ccc;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin-top: 2%;
+  margin: 1%;
+}
+.botao-voltar {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #fff;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: background-color 0.3s;
+}
+.botao-voltar:hover {
+    background-color: #f0f0f0;
 }
