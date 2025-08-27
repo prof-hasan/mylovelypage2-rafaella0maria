@@ -125,14 +125,15 @@ a:visited {
   margin-left: 5px;
 }
 ol{
-  font-size: 30px;
+  font-size: 16px;
+  margin-left: 20%;
+  border: #64008b, solid;
 }
 img{
   display:flex;
   border-radius: 20px;
   border: #64008b, 5px, solid;
   margin-top: 40px;
-
 }
   .item {
     display: flex;
@@ -178,14 +179,9 @@ img{
   font-size: 15px;
   font-family:Georgia, 'Times New Roman', Times, serif;
 }
-#text1{ 
-text-align: right;
-margin-top: 1px;
-}
-
 #texto2{
-  text-align: right;
-  margin-top: 1px;
+  text-align: left;
+  margin-bottom: -800%;
 }
 .artista {
   display: flex;
@@ -227,9 +223,13 @@ margin-top: 1px;
   margin-top: 0,1px;
 }
 pre{
-text-align: center;
+text-align: right;
 margin-top: 100px;
+margin-right: 5%;
 }
 #conteudo{
   border: #64008b, 1px;
+}
+dl{
+    border: #64008b, solid;
 }
