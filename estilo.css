@@ -51,7 +51,7 @@ p, pre{
 }
 li{
     font: size 20px;;
-    color: rgb(38, 27, 49);
+    color: rgb(24, 17, 31);
 }
 .linha-topo {
   display: flex;
@@ -118,7 +118,7 @@ a:visited {
 }
 
 .destaque img {
-  width: 600%;
+  width: 800%;
   height: auto;
   border-radius: 8px;
   margin-right: 5px;
@@ -127,7 +127,7 @@ a:visited {
 ol{
   font-size: 16px;
   margin-left: 20%;
-  border: #64008b, solid;
+  border: #674e70, double;
 }
 img{
   display:flex;
@@ -166,8 +166,7 @@ img{
   padding-bottom: 5px;
 }
 .texto-mpb p{
-  margin-bottom: 15px;
-  text-align: justify;
+  text-align: left;
 } 
 .nota-musical {
   font-size: 40px;
@@ -181,7 +180,7 @@ img{
 }
 #texto2{
   text-align: left;
-  margin-bottom: -800%;
+  margin-bottom: -900%;
 }
 .artista {
   display: flex;
@@ -190,9 +189,8 @@ img{
   border: 1px;
 }
 .artista img {
-  order: 2;
-  max-width: 200px;
   height: auto;
+  
 }
 .descricao {
   flex: 1;
@@ -226,10 +224,63 @@ pre{
 text-align: right;
 margin-top: 100px;
 margin-right: 5%;
+font-size: 120%;
 }
 #conteudo{
   border: #64008b, 1px;
 }
 dl{
-    border: #64008b, solid;
+    border: #584461, double;
+}
+.notas-musicais {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+}
+.notas-musicais span {
+  position: absolute;
+  font-size: 35px;
+  animation: subir 6s linear infinite;
+  opacity: 0.8;
+}
+.notas-musicais span:nth-child(1) { left: 10%; animation-delay: 0s; }
+.notas-musicais span:nth-child(2) { left: 30%; animation-delay: 1s; }
+.notas-musicais span:nth-child(3) { left: 50%; animation-delay: 2s; }
+.notas-musicais span:nth-child(4) { left: 70%; animation-delay: 3s; }
+.notas-musicais span:nth-child(5) { left: 90%; animation-delay: 4s; }
+@keyframes subir {
+  0% {
+    bottom: 0;
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    bottom: 100%;
+    transform: translateY(-100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+.container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.frase {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  text-align: center;
+  background-color: #c0bebc;
+  padding: 8px;
+  border-radius: 5px;
+  transition: opacity 0.3s ease;
+  font-size: 20px;
+  width: max-content;
+}
+.container:hover .frase {
+  visibility: visible;
+  opacity: 1;
 }
