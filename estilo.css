@@ -409,7 +409,7 @@ iframe{
   line-height: 1.6;
 }
 #quiz-mpb {
-  background-color: #e7c2eb;
+  background-color: #fff8e1;
   padding: 20px;
   border-radius: 20px;
   text-align: center;
@@ -427,26 +427,40 @@ iframe{
   font-weight: bold;
   cursor: pointer;
 }
+.microfones-animados {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  pointer-events: none; 
+  z-index: 9999;
+  overflow: hidden;
+}
+
 .microfones-animados span {
   position: absolute;
   font-size: 35px;
-  animation: subir 6s linear infinite;
+  animation: horizontal 6s linear infinite;
   opacity: 0.8;
+  bottom: 0;
 }
-.microfones-animados span:nth-child(1) { left: 10%; animation-delay: 0s; }
-.microfones-animados span:nth-child(2) { left: 30%; animation-delay: 1s; }
-.microfones-animados span:nth-child(3) { left: 50%; animation-delay: 2s; }
-.microfones-animados span:nth-child(4) { left: 70%; animation-delay: 3s; }
-.microfones-animados span:nth-child(5) { left: 90%; animation-delay: 4s; }
-@keyframes subir {
+
+.microfones-animados span:nth-child(1) { top: 10%; animation-delay: 0s; }
+.microfones-animados span:nth-child(2) { top: 30%; animation-delay: 1s; }
+.microfones-animados span:nth-child(3) { top: 50%; animation-delay: 2s; }
+.microfones-animados span:nth-child(4) { top: 70%; animation-delay: 3s; }
+.microfones-animados span:nth-child(5) { top: 90%; animation-delay: 4s; }
+
+@keyframes horizontal {
   0% {
-    bottom: 0;
-    transform: translateY(0) rotate(0deg);
+    left: 0;
+    transform: translateX(0) rotate(0deg);
     opacity: 1;
   }
   100% {
-    bottom: 100%;
-    transform: translateY(-100vh) rotate(360deg);
+    left: 100%;
+    transform: translateX(100vw) rotate(360deg);
     opacity: 0;
   }
 }
@@ -459,19 +473,23 @@ iframe{
   margin: 40px auto;
   font-family: 'Segoe UI', sans-serif;
 }
+
 .links-mpb h2 {
   font-size: 24px;
   color: #d44fd9;
   margin-bottom: 20px;
   text-align: center;
 }
+
 .links-mpb dl {
   margin: 0;
   padding: 0;
 }
+
 .links-mpb dd {
   margin-bottom: 15px;
 }
+
 .links-mpb a {
   display: inline-block;
   background-color: #c1a6c7;
