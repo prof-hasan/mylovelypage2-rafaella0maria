@@ -130,7 +130,6 @@ a:visited {
   transform: translateY(-50%) scale(0);
   transition: transform 0.3s ease;
 }
-
 .seta li a:hover::after {
   transform: translateY(-50%) scale(1);
 }
@@ -184,9 +183,8 @@ a:visited {
   display: flex;
   margin: 20px;
 }
-
 .destaque img {
-  width: 600%;
+  width: 700%;
   height: auto;
   border-radius: 8px;
   margin-right: 5px;
@@ -203,19 +201,19 @@ img{
   border: #64008b, 5px, solid;
   margin-top: 40px;
 }
-  .item {
+.item {
     display: flex;
     align-items: center;
     border-radius: 10px;
   }
-  .item .img {
+.item .img {
   width: 300px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   transition: transform 0.3s;
   }
 
-  .item img:hover {
+.item img:hover {
   transform: scale(1.05);
 }
 .texto-mpb::first-letter{
@@ -276,13 +274,13 @@ img{
   margin: 1%;
 }
 .botao-voltar {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    background-color: #fff;
-    color: #333;
-    padding: 10px 15px;
-    border-radius: 10px; 
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: #fff;
+  color: #333;
+  padding: 10px 15px;
+  border-radius: 10px; 
 }
 .botao-voltar:hover {
     background-color: #f0f0f0;
@@ -301,7 +299,7 @@ footer{
   border: #64008b, 1px;
 }
 dl{
-    border: #584461, double;
+  border: #584461, double;
 }
 .notas-musicais {
   position: fixed;
@@ -323,14 +321,14 @@ dl{
 .notas-musicais span:nth-child(5) { left: 90%; animation-delay: 4s; }
 @keyframes subir {
   0% {
-    bottom: 0;
-    transform: translateY(0) rotate(0deg);
-    opacity: 1;
+  bottom: 0;
+  transform: translateY(0) rotate(0deg);
+  opacity: 1;
   }
   100% {
-    bottom: 100%;
-    transform: translateY(-100vh) rotate(360deg);
-    opacity: 0;
+  bottom: 100%;
+  transform: translateY(-100vh) rotate(360deg);
+  opacity: 0;
   }
 }
 .container {
@@ -468,14 +466,14 @@ iframe{
 
 @keyframes horizontal {
   0% {
-    left: 0;
-    transform: translateX(0) rotate(0deg);
-    opacity: 1;
+  left: 0;
+  transform: translateX(0) rotate(0deg);
+  opacity: 1;
   }
   100% {
-    left: 100%;
-    transform: translateX(100vw) rotate(360deg);
-    opacity: 0;
+  left: 100%;
+  transform: translateX(100vw) rotate(360deg);
+  opacity: 0;
   }
 }
 .links-mpb {
