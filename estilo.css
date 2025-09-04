@@ -71,9 +71,13 @@ li{
   width: 10px;
 }
 .animado {
-  flex: 1;
-  text-align: center;
-  font-size:2em;
+  font-size: 3em;
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
 }
  h2{
   font-family: 'Courier New', Courier, monospace;
@@ -164,12 +168,12 @@ a:visited {
   gap: 30px; 
 }
 .destaque {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 5px;
-  margin-right: 27%;
-  gap: 5px;
+ display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  margin-right: 110px;
+  margin-top: -300px;
 }
 .destaque .item {
   text-align: center;
@@ -202,9 +206,15 @@ img{
     border-radius: 10px;
   }
   .item .img {
-    display: flex;
-    flex-direction: column;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
   }
+
+  .item img:hover {
+  transform: scale(1.05);
+}
 .texto-mpb::first-letter{
   font-size: 50px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -278,10 +288,11 @@ img{
   margin-top: 0,1px;
 }
 footer{
-text-align: center;
-font-size: 120%;
-border: 10px, double black;
-background-color: rgb(132, 108, 151);
+  background-color: #7e698b;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
 }
 #conteudo{
   border: #64008b, 1px;
@@ -356,10 +367,6 @@ iframe{
 #final{
   margin: 3%;
 }
-@keyframes girar {
-  0%   { transform: translateX(-50%) rotate(0deg); }
-  100% { transform: translateX(-50%) rotate(360deg); }
-}
 .imagens-lado-a-lado {
   display: flex;
   justify-content: center; 
@@ -371,11 +378,15 @@ iframe{
   height: 200px;
   border-radius: 8px;
 }
+.imagens-lado-a-lado img:hover{
+  width: 400px;
+  height: 300px;
+}
 .cabecalho {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
+  background-color: #a99cad;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 5px solid #c294c4;
 }
 .dedo-pulando {
   animation: pular 1s infinite;
